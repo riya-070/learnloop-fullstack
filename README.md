@@ -88,4 +88,4 @@ The automated API test covers tutor signup, student signup, JWT authentication, 
 
 ## Live frontend
 
-[University Tutor Platform](https://university-tutor-site.netlify.app/)
+[University Tutor Platform](https://learnloop-fullstack.netlify.app)

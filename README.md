@@ -1,33 +1,83 @@
 # LearnLoop — University Tutor Platform
 
-LearnLoop is a full-stack peer-learning platform that helps university students find peer tutors, request learning sessions, and manage their bookings.
+LearnLoop is a full-stack peer-learning platform that helps university students connect with peer tutors. Students can search for tutors, request sessions, save favourites, and manage their bookings. Tutors can manage their availability and respond to session requests.
+
+## Live Website
+
+[View LearnLoop](https://learnloop2.netlify.app/)
+
+> The backend uses a free Render instance. The first request may take around 50 seconds if the server has been inactive.
 
 ## Features
 
-- Student and tutor registration and login
-- Secure authentication using hashed passwords and JWT
+- Student and tutor account registration
+- Secure login using JWT authentication
+- Password hashing for account security
+- Separate student and tutor dashboards
 - Search tutors by subject, branch, year, price, and rating
-- Book tutoring sessions and view booking history
-- Tutor dashboard to accept or manage session requests
-- Save favourite tutors
-- Add tutor availability
+- Request and manage tutoring sessions
+- Confirm or cancel booking requests
+- Save and remove favourite tutors
+- Manage tutor availability
 - Review tutors after completed sessions
-- Separate dashboards for students and tutors
+- View role-based dashboard statistics
 - Responsive design for desktop and mobile devices
 
 ## Tech Stack
 
-- **Frontend:** React, Vite, JavaScript, CSS
-- **Backend:** FastAPI and Python
-- **Database:** PostgreSQL for deployment and SQLite for local testing
-- **Authentication:** JWT and password hashing
-- **Deployment:** Netlify for the frontend and Render for the backend
+### Frontend
 
-## Run Locally
+- React 19
+- Vite
+- JavaScript
+- CSS
 
-### 1. Start the Backend
+### Backend
 
-Create a virtual environment:
+- Python
+- FastAPI
+- SQLAlchemy
+- REST APIs
+- JWT authentication
+- Password hashing
 
-```bash
-python -m venv backend/.venv
+### Database
+
+- PostgreSQL for the deployed application
+- SQLite for local development and testing
+
+### Deployment
+
+- Netlify — frontend
+- Render — backend
+- Neon — PostgreSQL database
+
+## Project Structure
+
+```text
+learnloop-fullstack/
+├── backend/
+│   ├── tests/
+│   ├── __init__.py
+│   ├── auth.py
+│   ├── database.py
+│   ├── main.py
+│   ├── models.py
+│   ├── schemas.py
+│   ├── requirements.txt
+│   └── .env.example
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── api.js
+│   ├── index.css
+│   └── main.jsx
+├── .env.example
+├── .env.production
+├── .gitignore
+├── index.html
+├── package.json
+├── render.yaml
+├── vite.config.js
+└── README.md

@@ -23,11 +23,11 @@ LearnLoop is a full-stack peer-learning platform that helps university students 
 - View role-based dashboard statistics
 - Responsive design for desktop and mobile devices
 
-## Tech Stack
+## Technologies Used
 
 ### Frontend
 
-- React 19
+- React
 - Vite
 - JavaScript
 - CSS
@@ -36,21 +36,18 @@ LearnLoop is a full-stack peer-learning platform that helps university students 
 
 - Python
 - FastAPI
-- SQLAlchemy
+- SQL
 - REST APIs
 - JWT authentication
 - Password hashing
 
-### Database
+### Database and Deployment
 
-- PostgreSQL for the deployed application
-- SQLite for local development and testing
+- PostgreSQL
+- Neon
+- Render
+- Netlify
 
-### Deployment
-
-- Netlify — frontend
-- Render — backend
-- Neon — PostgreSQL database
 
 ## Project Structure
 

@@ -12,11 +12,14 @@ from .database import Base, engine, get_db
 
 Base.metadata.create_all(bind=engine)
 app = FastAPI(title="LearnLoop University Tutor API", version="1.0.0")
-
-origins = [item.strip() for item in os.getenv(
-    "CORS_ORIGINS",
-    "http://localhost:5173,https://university-tutor-site.netlify.app",
-).split(",") if item.strip()]
+origins = [
+    item.strip()
+    for item in os.getenv(
+        "CORS_ORIGINS",
+        "http://localhost:5173,https://learnloop2.netlify.app",
+    ).split(",")
+    if item.strip()
+]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,

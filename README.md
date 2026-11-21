@@ -43,8 +43,7 @@ LearnLoop is a full-stack peer-learning platform that helps university students 
 
 ### Database and Deployment
 
-- PostgreSQL
-- Neon
+- MySQL 
 - Render
 - Netlify
 
